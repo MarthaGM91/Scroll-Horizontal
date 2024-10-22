@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Oculta las barras de desplazamiento del navegador */
+    overflow: hidden;
+}
+/*
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll-content {
+    display: inline-block;
+}
+
+.scroll-item {
+    display: inline-block;
+    width: 200px; /* Ajusta el tamaño de los ítems según tus necesidades */
+   /* height: 150px; /* Ajusta la altura de los ítems según tus necesidades */
+   /*  background-color: #f0f0f0;
+   /*  border: 1px solid #ddd;
+    margin-right: 10px; /* Espacio entre los ítems */
+   /*  text-align: center;
+    line-height: 150px; /* Centra el texto verticalmente */
+/* }*/
+
+.scroll-container1{
+    /* Ancho completo de la ventana de visualización */
+    width: 100vw;
+    background-color: blue;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-content1{
+    
+       display: flex;
+       /* Controla la velocidad y el ciclo del scroll */
+    animation: scroll 20s linear infinite; 
+}
+
+.scroll-item1{
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+     /* Altura de cada ítem */
+    height: 150px;
+     /* Espacio entre los ítems */
+     margin-top: 10px;
+      /* Espacio entre los ítems */
+      margin-right: 10px; 
+         /* Espacio entre los ítems */
+         margin-block-end: 10px; 
+      /* Ancho de cada ítem */
+     min-width: 200px;
+     /* Centra el texto verticalmente */
+     line-height: 150px;
+     text-align: center;
+    
+}
+
+.scroll-container2 {
+    
+    width: 100vw; /* Ancho completo de la ventana de visualización */
+    overflow: hidden; /* Oculta cualquier desbordamiento horizontal */
+    background-color: #f0f0f0; /* Fondo opcional para el contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-content2 {
+    background-color: brown;
+    display: flex;
+    animation: scroll 20s linear infinite; /* Controla la velocidad y el ciclo del scroll */
+}
+
+.scroll-item2 {
+    min-width: 200px; /* Ancho de cada ítem */
+    height: 150px; /* Altura de cada ítem */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-right: 10px; /* Espacio entre los ítems */
+    text-align: center;
+    line-height: 150px; /* Centra el texto verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animación para el scroll automático */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Mueve el contenido al 50% de su ancho total */
+        transform: translateX(-50%); 
+    }
+}
